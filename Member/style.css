@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+.main {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #000;
+}
+
+.main nav {
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2.5vw;
+}
+
+.thin {
+    font-weight: 200;
+    font-size: 1.8vw;
+}
+
+.bold {
+    font-weight: bold;
+    color: #ffc0cb;
+}
+
+.right {
+    display: flex;
+    gap: 35px;
+    margin-right: 30px;
+}
+
+.right a {
+    font-size: 1.2vw;
+    text-decoration: none;
+    color: #fff;
+}
+
+.right .member{
+    color: #ffc0cb;
+}
+
+.container{
+    width: 100%;
+    height: calc(100% - 70px);
+    position: absolute;
+    display: flex;
+}
+
+.left-container{
+    width: 25%;
+    height: 100%;
+    border-right: 1px solid #fff;
+    padding-top: 2vw;
+    padding-left: 2vw;
+}
+
+.profile{
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 200
+}
+.center-circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circle{
+    width: 190px;
+    height: 190px;
+    border: 3px solid #ffc0cb;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circle h3{
+    font-size: 9vw;
+    font-weight: 400;
+    color: #ffc0cb;
+}
+
+.info{
+    padding-top: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name-owner{
+    font-size: 2vw;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 1vw;
+    font-weight: 400
+}
+
+.owner{
+    color: #fff;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+.about-me{
+    color: #fff;
+    margin-top: 2vw;
+    width: 95%;
+}
+.about-me h5{
+    font-size: 1.2vw;
+    font-weight: 300
+}
+.about-me p{
+    font-weight: 200;
+    color: rgb(192, 191, 191);
+}
+.right-container{
+    width: 70%;
+    height: 100%;
+    padding-top: 2vw;
+    padding-left: 3.5vw;
+}
+
+.heading{
+    font-size: 2vw;
+    font-weight: 300;
+    color: #fff;
+    text-transform: uppercase;
+}
+.members{
+    margin-top: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.total-members h4{
+    color: #fff;
+    font-weight: 200;
+}
+.line-bar{
+    width: 70%;
+    height: 100%;
+    border: 1px solid #fff;
+    padding: 0.3vw;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+.bar{
+    width: 0%;
+    height: 100%;
+    background-color: #ffc0cb;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.percentage{
+    color: #fff;
+    font-weight: 200;
+}
+
+.member-number h5{
+    color: #fff;
+    font-weight: 200;
+    font-size: 1.001vw;
+    margin-top: 2vw;
+    margin-left: 2.7vw;
+}
+
+.member_number{
+    margin-left: 1vw;
+}
