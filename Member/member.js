@@ -10,3 +10,5 @@ const bar = document.querySelector('.bar')
 
 bar.style.width = `${counter}%`
 percentage.textContent = `${counter}%`
+
+

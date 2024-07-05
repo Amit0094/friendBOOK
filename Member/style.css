@@ -37,9 +37,16 @@ html , body{
 
 .right {
     display: flex;
-    gap: 35px;
-    margin-right: 30px;
+    /* gap: 35px; */
+    gap: 2vw;
+    /* margin-right: 30px; */
+    margin-right: 2.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+
 
 .right a {
     font-size: 1.2vw;
@@ -47,7 +54,44 @@ html , body{
     color: #fff;
 }
 
+.right i{
+    color: #fff;
+    font-size: 1.2vw;
+    display: none;
+    cursor: pointer;
+    padding: 1.5vw;
+    border-radius: 20px;
+}
+
+.right i:active{
+    background-color: #ffc0cb;
+}
+
+.navigate{
+    width: 100%;
+    position: absolute;
+    transform: translateX(-100%);
+    transition: all ease-out 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6vw;
+    
+}
+.navigate a{
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #ffffff57;
+    padding: 2vw 5vw;
+    border-radius: 25px;
+}
+
 .right .member{
+    color: #ffc0cb;
+}
+
+.navigate .member{
     color: #ffc0cb;
 }
 
@@ -180,4 +224,108 @@ html , body{
 
 .member_number{
     margin-left: 1vw;
+}
+
+
+
+@media (max-width:500px) {
+    nav{
+        height: 50px;
+    }
+    
+    .thin{
+        font-size: 5.5vw;
+    }
+    .right i{
+        display: block;
+        font-size: 5vw;
+        font-weight: 900;
+    }
+    .right a{
+        display: none;
+    }
+    .navigate{
+        padding-top: 6vw;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .left-container{
+        width: 100%;
+        height: 60%;
+    }
+
+    .profile{
+        font-weight: 300
+    }
+    .circle{
+        width: 200px;
+        height: 200px;
+        border: 5px solid #ffc0cb;
+    }
+    .circle h3{
+        font-size: 25vw;
+    }
+    
+    .info{
+        padding-top: 5vw;
+    }
+    
+    .name-owner{
+        font-size: 8vw;
+        letter-spacing: 2vw;
+    }
+    
+    .owner{
+        font-weight: 400;
+        opacity: 0.7;
+    }
+    
+    .about-me{
+        color: #fff;
+        margin-top: 2vw;
+        width: 95%;
+        margin-left: 1vw;
+    }
+    .about-me h5{
+        font-size: 5vw;
+    }
+    .about-me p{
+        font-weight: 200;
+        color: rgb(192, 191, 191);
+    }
+
+    .right-container{
+        padding-top: 10vw;
+        width: 100%;
+        height: 40%;
+    }
+
+    .heading{
+        font-size: 5vw;
+    }
+    .members{
+        margin-top: 4vw;
+    }
+    .total-members h4{
+        color: #fff;
+        font-weight: 200;
+    }
+    .line-bar{
+        width: 60%;
+        padding: 0.9vw;
+    }
+    .percentage{
+        font-weight: 500;
+    }
+    
+    .member-number h5{
+        font-size: 3.8vw;
+        margin-left: 1vw;
+    }
+    
+    .member_number{
+        margin-left: 1vw;
+        font-weight: 500;
+    }
 }
