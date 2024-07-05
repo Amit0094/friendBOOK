@@ -84,6 +84,8 @@ body {
     align-items: center;
     justify-content: center;
     gap: 6vw;
+    position: absolute;
+    z-index: 99;
 }
 .navigate a{
     color: #fff;
